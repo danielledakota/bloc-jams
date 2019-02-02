@@ -3,7 +3,7 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
  }
- 
+
 html {
      height: 100%; /* makes sure our HTML takes up 100% of the browser window */
      font-size: 100%;
@@ -58,4 +58,12 @@ a{
  /* Large screens (1024px) */
 @media (min-width: 1024px) {
      html { font-size: 120%; }
+ }
+
+ .clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
  }
